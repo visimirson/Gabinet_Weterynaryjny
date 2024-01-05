@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/15ec5ee6a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -55,6 +56,82 @@
         <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatibus.</p>
         <a href="#about-us" class="header__btn">Więcej informacji</a>
     </header>
+    <!-- MAIN -->
+    <main class="main">
+        <!-- ABOUT US -->
+        <section class="about-us section-padding section" id="about-us">
+            <h2 class="section-heading">O nas</h2>
+            <div class="wrapper">
+                <div class="about-us__slider">
+                    <div class="about-us__images">
+                        <img class="about-us__image" src="./img/about_us_1.jpg" alt="narzędzia do pielęgnacji zwierząt domowych">
+                        <img class="about-us__image" src="./img/about_us_2.jpg" alt="pies w kołrzeżu pooperacyjnym">
+                        <img class="about-us__image" src="./img/about_us_3.jpg" alt="kolorowa figurka weterynarza z gliny">
+                        <img class="about-us__image" src="./img/about_us_4.jpg" alt="kolorowe figurki weterynarzy w domku">
+                    </div>
+                    <div class="arrow-prev">
+                        <button class="about-us__slider-btn"><i class="fa-solid fa-angles-left"></i></button>
+                    </div>
+                    <div class="arrow-next">
+                        <button class="about-us__slider-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                </div>
+                <div class="about-us__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis quisquam iusto facere qui deleniti nemo. Debitis, sint eum in perspiciatis quae laudantium sit, neque magnam pariatur amet error qui magni veniam ad ab dolore officiis. Quasi unde iste est consequatur sapiente, ducimus quas quod eos adipisci beatae amet impedit porro atque, sequi numquam veritatis quis recusandae neque maiores. Facere fuga enim ipsa sint magnam quisquam eum vitae blanditiis numquam quaerat ipsum, in praesentium sunt accusantium asperiores dignissimos architecto consequuntur suscipit, nam possimus odit. Culpa voluptatem distinctio autem? Aspernatur dicta voluptates, cum recusandae blanditiis dolores dolore magnam voluptatum provident corrupti?</p>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="services section-padding section section-green" id="services">
+            <div class="wrapper">
+                <h2 class="section-heading">Usługi</h2>
+
+                <div class="services__cards" onclick="void(0)">
+                    <div class="services__card">
+                        <div class="services__card-img services__card-img--first">
+                            <h3 class="services__card-title">Chirurgia</h3>
+                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right"></i> Więcej informacji</p>    
+                        </div>
+                        <div class="services__card-info">
+                            <h3 class="services__card-info-title">Chirurgia</h3>
+                            <ul class="services__card-info-list">
+                                <li class="services__card-info-list-item">Sterylizacje</li>
+                                <li class="services__card-info-list-item">Kastracje</li>
+                                <li class="services__card-info-list-item">Usuwanie gózów</li>
+                                <li class="services__card-info-list-item">Chirurgia kostna</li>
+                                <li class="services__card-info-list-item">Laparotomia</li>
+                            </ul>
+                            <button class="services__card-info-btn"><i class="fas fa-angle-double-left"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <div class="services__card-img services__card-img--second">
+                            <h3 class="services__card-title">Chirurgia</h3>
+                            <p class="islands__card-img-info"><i class="fas fa-angle-double-right"></i> Więcej informacji</p>    
+                        </div>
+                        <div class="services__card-info">
+                            <h3 class="services__card-info-title">Chirurgia</h3>
+                            <ul class="services__card-info-list">
+                                <li class="services__card-info-list-item">Sterylizacje</li>
+                                <li class="services__card-info-list-item">Kastracje</li>
+                                <li class="services__card-info-list-item">Usuwanie gózów</li>
+                                <li class="services__card-info-list-item">Chirurgia kostna</li>
+                                <li class="services__card-info-list-item">Laparotomia</li>
+                            </ul>
+                            <button class="services__card-info-btn"><i class="fas fa-angle-double-left"></i></button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
