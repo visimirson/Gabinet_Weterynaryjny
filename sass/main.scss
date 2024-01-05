@@ -225,16 +225,18 @@ a {
 
 // SERVICES
 .services{
-    &__cards {
-        background-image: linear-gradient(45deg, rgba(2,0,36,.1) 0%, rgba(55, 192, 53, 0.7) 100%, rgba(0,212,255,.6) 100%), url('../img/services.jpg');
+    background-color: #63a91f;
+    background-image: linear-gradient(314deg, #63a91f 0%, #1a512e 74%);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    h2 {
+        color: #fff;
     }
     &__card {
         position: relative;
         margin: 1em 0;
-        height: 450px;
+        height: 380px;
         text-align: center;
         perspective: 1000px;
         &:hover {
@@ -247,12 +249,28 @@ a {
                 opacity: 1;
             }
         }
-        &-img {
+        &-front {
             padding: 2em;
             height: 100%;
             border-radius: 8px;
             background-size: cover;
             transition: transform 1s, opacity 1s;
+            background-color: #fff;
+            &-title {
+                font-size: 2.8rem;
+            }
+            &-img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 50%;
+                width: 50%;
+                background-image:linear-gradient(45deg, rgba(11, 240, 80, 0.1) 0%, rgba(55, 192, 53, 0.9) 100%, rgba(15, 207, 44, 0.9) 100%), url('../img/services1.jpg');
+                transform: translate(-50%, -50%);
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
             &-info {
                 position: absolute;
                 bottom: 30px;
@@ -272,16 +290,47 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-image: green;
+            background-color: #fff;
             border-radius: 8px;
             opacity: 0;
             transform: rotateY(180deg);
             transition: transform 1s, opacity 1s;
+            &-title {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 1.2em;
+                font-size: 2.8rem;        
+            }
+            &-list {
+                margin: 0 auto;
+                width: 70%;
+                list-style: none;
+                &-item {
+                    padding: 1em;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid #000;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+            &-btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 2em;
+                border-radius: 8px;
+                width: 80%;
+                border: none;
+                background-color: greenyellow;
+                cursor: pointer;
+                &::before {
+                    background-color: green;
+                }
+            }
         }
-
-        
     }
-
 }
 //MEDIA
 @media(min-width: 768px) {
@@ -298,6 +347,17 @@ a {
     }
     .section-padding {
         padding: 8em 2em;
+    }
+    .services {
+        &__cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__card {
+            margin: 1em;
+            width: 25%;
+        }
     }
 }
 @media(min-width: 992px) {
