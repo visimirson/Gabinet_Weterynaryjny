@@ -332,6 +332,33 @@ a {
         }
     }
 }
+//CONTACT
+.contact {
+    &__map {
+        width: 100%;
+        height: 300px;
+    }
+    &__information {
+        list-style: none;
+        &-adress,
+        &-opening-hours {
+            display: flex;
+        }
+        li {
+            margin-bottom: .6em;
+        }
+        &-phone-numbers {
+            &-mobile {
+                margin-bottom: .6em;
+                }
+            }
+        }
+    
+    &__icon {
+        margin: auto 2em;
+    }
+}
+
 //MEDIA
 @media(min-width: 768px) {
     .burger-btn {
