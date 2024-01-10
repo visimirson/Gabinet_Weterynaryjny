@@ -361,7 +361,44 @@ a {
         margin-right: 2em;
     }
 }
-
+//FOOTER
+.footer {
+    color: #fff;
+    background-color: #2e2e2e;
+    .wrapper {
+        padding: 4em 2em 2em;
+    }
+    &__box {
+        &-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+            &-img {
+                width: 6em;
+            }
+            &-text {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+            }    
+        }
+        &-list{
+            list-style: none;
+            text-align: center;
+            font-size: 1.1em;
+            &-item {
+                margin-bottom: 1em;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    &__bottom-text {
+        padding: 1em;
+        text-align: center;
+    }
+}
 //MEDIA
 @media(min-width: 768px) {
     .burger-btn {
@@ -412,6 +449,16 @@ a {
             margin: 1em;
             width: 25%;
         }
+    }
+    .footer {
+        &__boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__box {
+            margin: 0 2em;
+            width: 50%;
+        }    
     }
 }
 @media(min-width: 992px) {

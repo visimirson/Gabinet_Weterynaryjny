@@ -345,6 +345,42 @@ a {
   margin-right: 2em;
 }
 
+.footer {
+  color: #fff;
+  background-color: #2e2e2e;
+}
+.footer .wrapper {
+  padding: 4em 2em 2em;
+}
+.footer__box-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.footer__box-title-img {
+  width: 6em;
+}
+.footer__box-title-text {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.footer__box-list {
+  list-style: none;
+  text-align: center;
+  font-size: 1.1em;
+}
+.footer__box-list-item {
+  margin-bottom: 1em;
+}
+.footer__box-list a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__bottom-text {
+  padding: 1em;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .burger-btn {
     display: none;
@@ -388,6 +424,14 @@ a {
   .services__card {
     margin: 1em;
     width: 25%;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
